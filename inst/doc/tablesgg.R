@@ -117,6 +117,24 @@ sz <- pltdSize(plot(ttbl), units="in")
 ## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
 plot(ttbl)
 
+## ---- eval=tablesggOpt("allowMarkdown")---------------------------------------
+txt1 <- paste0(
+          "MKDN_Some <span style='color:blue'>blue text **in bold.**</span><br>", 
+          "And *italic text.*<br>", 
+          "And some <span style='font-size:18pt; color:black'>large</span> text.")
+txt2 <- "MKDN_Super- and subscripts: *x*<sup>2</sup> + 5*x* + *C*<sub>*i*</sub>"
+plt <- plot(textTable(matrix(c(txt1, txt2), ncol=1)), 
+            title="Illustrate markdown", scale=1.2)
+
+## ---- echo=FALSE, eval=tablesggOpt("allowMarkdown")---------------------------
+sz <- pltdSize(plt, units="in")
+
+## ---- fig.width=sz[1], fig.height=sz[2], eval=tablesggOpt("allowMarkdown")----
+print(plt)
+
+## ---- echo=FALSE, eval=!tablesggOpt("allowMarkdown")--------------------------
+#  cat("[Example skipped because 'tablesggOpt(\"allowMarkdown\")' is FALSE]\n")
+
 ## -----------------------------------------------------------------------------
 ttbl <- textTable(iris2_tab, foot="sd = standard deviation")
 ttbl <- addRefmark(ttbl, mark="a", before="sd =", after="sd$", raise=TRUE)
@@ -279,7 +297,7 @@ plt
 plt <- plot(textTable(iris2_tab))
 propsd(plt, subset=(enabled)) <- element_hvrule(color="red")
 propsd(plt, subset=(part == "colhead" & headlayer == 1)) <- 
-       element_entry(angle=90, hjust=0.5, vjust=0.5)
+       element_entry(angle=90, hjust=0.5, vjust=1.0)
 
 ## ---- echo=FALSE--------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
@@ -391,4 +409,18 @@ sz <- c(sz1[1] + sz2[1] + 0.5, max(sz1[2], sz2[2]))
 ## ---- echo=FALSE, fig.width=sz[1], fig.height=sz[2]---------------------------
 print(plt, position=c(0, 0.5))
 print(keyplt, position=c(1, 0.5), newpage=FALSE)
+
+## ---- eval=tablesggOpt("allowWrap")-------------------------------------------
+tablesggSetOpt(allowWrap=TRUE)
+plt <- plot(iris2_tab, title=paste0("An unnecessarily long title, used to ", 
+            "illustrate automatic text wrapping"))
+
+## ---- echo=FALSE, eval=tablesggOpt("allowWrap")-------------------------------
+sz <- pltdSize(plt, units="in")
+
+## ---- fig.width=sz[1], fig.height=sz[2], eval=tablesggOpt("allowWrap")--------
+print(plt)
+
+## ---- echo=FALSE, eval=!tablesggOpt("allowWrap")------------------------------
+#  cat("[Example skipped because 'tablesggOpt(\"allowWrap\")' is FALSE]\n")
 
