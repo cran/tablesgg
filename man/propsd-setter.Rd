@@ -1,5 +1,5 @@
 % Auto-generated documentation for function propsd<- 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.008011 
 \name{propsd<-}
 \alias{propsd<-}
 \title{Update Graphical Properties for Selected Table Elements }

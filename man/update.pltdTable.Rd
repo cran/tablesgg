@@ -1,5 +1,5 @@
 % Auto-generated documentation for function update.pltdTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.425195 
 \name{update.pltdTable}
 \alias{update.pltdTable}
 \title{Update a \code{pltdtable} (Plotted Table) Object }

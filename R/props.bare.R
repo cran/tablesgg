@@ -1,4 +1,4 @@
-#===== Source file: ../props.r on 2021-06-02
+#===== Source file: ../props.r on 2024-01-26
 #-----
 
 'propsa<-' <- function(x, arows=NULL, acols=NULL, setEnabled=TRUE, value)

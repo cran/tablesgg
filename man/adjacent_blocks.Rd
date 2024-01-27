@@ -1,5 +1,5 @@
 % Auto-generated documentation for function adjacent_blocks 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.426591 
 \name{adjacent_blocks}
 \alias{adjacent_blocks}
 \title{Identify Adjacent Blocks of Table Cells }

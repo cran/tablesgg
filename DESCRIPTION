@@ -1,14 +1,14 @@
 Package: tablesgg
-Version: 0.8-1
-Date: 2021-05-31
+Version: 0.9-1
+Date: 2024-01-26
 Title: Presentation-Quality Tables, Displayed Using 'ggplot2'
 Authors@R: c(person("Richard", "Raubertas", role=c("aut", "cre"), 
                     email="rrprf@emvt.net"))
 Author: Richard Raubertas [aut, cre]
 Maintainer: Richard Raubertas <rrprf@emvt.net>
 License: GPL (>= 3)
-Imports: ggplot2, tables, graphics, grDevices, stats, tools, utils,
-        grid
+Imports: ggplot2 (>= 3.4.0), tables, graphics, grDevices, stats, tools,
+        utils, grid
 Suggests: ggtext, gridtext, quadprog, xtable, knitr, rmarkdown
 Description: Presentation-quality tables are displayed as plots on an R 
   graphics device.  Although there are other packages that format tables 
@@ -31,6 +31,6 @@ URL: https://github.com/rrprf/tablesgg
 LazyData: yes
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2021-06-02 15:14:11 UTC; rfr
+Packaged: 2024-01-26 20:49:43 UTC; rfr
 Repository: CRAN
-Date/Publication: 2021-06-02 19:00:02 UTC
+Date/Publication: 2024-01-27 01:10:02 UTC

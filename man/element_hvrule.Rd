@@ -1,5 +1,5 @@
 % Auto-generated documentation for function element_hvrule 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.665668 
 \name{element_hvrule}
 \alias{element_hvrule}
 \title{Specify Visual Properties for Table Rules }
@@ -15,7 +15,7 @@ element_hvrule(colour=NULL, alpha=NULL, linetype=NULL, size=NULL,
 \arguments{
   \item{color, alpha, linetype, size}{Scalar values for the graphical properties that are used to display the
 horizontal or vertical line of an hvrule.  Values will be passed to
-\code{ggplot2::geom_segment}.
+\code{ggplot2::geom_segment} (\code{size} as \code{linewidth}).
   }
   \item{fill, fill_alpha, space}{Scalar values for the graphical properties of the (long, thin) rectangle
 that encloses an hvrule.  \code{space} is the height (for a horizontal

@@ -1,5 +1,5 @@
 % Auto-generated documentation for function as.prEntries 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.486878 
 \name{as.prEntries}
 \alias{as.prEntries}
 \title{Promote a Data Frame to a \code{prentries} Object }

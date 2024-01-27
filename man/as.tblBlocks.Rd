@@ -1,5 +1,5 @@
 % Auto-generated documentation for function as.tblBlocks 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.479795 
 \name{as.tblBlocks}
 \alias{as.tblBlocks}
 \title{Promote a Data Frame to a \code{tblblocks} Object }

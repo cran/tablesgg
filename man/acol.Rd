@@ -1,5 +1,5 @@
 % Auto-generated documentation for function acol 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.534227 
 \name{acol}
 \alias{acol}
 \title{Column Numbers Within the Augmented Row-Column Grid for a Table }

@@ -1,4 +1,4 @@
-#===== Source file: ../tblEntries.r on 2021-06-02
+#===== Source file: ../tblEntries.r on 2024-01-26
 #-----
 
 tblEntries <- function(x, mergeRuns=c(TRUE, TRUE), rowheadInside=FALSE)

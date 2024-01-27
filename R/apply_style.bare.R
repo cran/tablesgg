@@ -1,4 +1,4 @@
-#===== Source file: ../apply_style.r on 2021-06-02
+#===== Source file: ../apply_style.r on 2024-01-26
 #-----
 
 apply_style <- function(x, style, replace, setEnabled, unstyled, base_style)

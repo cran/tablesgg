@@ -1,5 +1,5 @@
 % Auto-generated documentation for function print.summary.pltdTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.113213 
 \name{print.summary.pltdTable}
 \alias{print.summary.pltdTable}
 \title{Print the Dimensions and Display Options of a Plotted Table }

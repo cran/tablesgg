@@ -1,5 +1,5 @@
 % Auto-generated documentation for function ids 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.676184 
 \name{ids}
 \alias{ids}
 \title{Get the Identifier Strings for Parts or Elements of a Table }

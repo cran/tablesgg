@@ -1,5 +1,5 @@
 % Auto-generated documentation for function spec_from_text 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.227338 
 \name{spec_from_text}
 \alias{spec_from_text}
 \title{\code{textspec} Values Based on String Prefixes }

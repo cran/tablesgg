@@ -1,4 +1,4 @@
-#===== Source file: ../addHvrule.r on 2021-06-02
+#===== Source file: ../addHvrule.r on 2024-01-26
 #-----
 
 addHvrule <- function(x, direction, arows, acols, id, props=NULL, enabled=TRUE)

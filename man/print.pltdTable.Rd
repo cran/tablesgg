@@ -1,5 +1,5 @@
 % Auto-generated documentation for function print.pltdTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.920126 
 \name{print.pltdTable}
 \alias{print.pltdTable}
 \title{Print (Draw) a \code{pltdtable} Object }

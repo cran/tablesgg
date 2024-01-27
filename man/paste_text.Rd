@@ -1,5 +1,5 @@
 % Auto-generated documentation for function paste_text 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.239932 
 \name{paste_text}
 \alias{paste_text}
 \title{Paste Strings that may Include \code{plotmath} or Markdown }

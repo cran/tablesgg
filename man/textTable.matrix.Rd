@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable.matrix 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.26055 
 \name{textTable.matrix}
 \alias{textTable.matrix}
 \title{Create a \code{texttable} from a Matrix }

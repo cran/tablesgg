@@ -1,5 +1,5 @@
 % Auto-generated documentation for function angle_adj 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.886843 
 \name{angle_adj}
 \alias{angle_adj}
 \title{Horizontal and Vertical Dimensions of a Rectangle after Rotation }

@@ -34,5 +34,7 @@ S3method(textTable, data.frame)
 S3method(textTable, ftable)
 S3method(textTable, table)
 S3method(textTable, tabular)
+S3method(textTable, tblEntries)
 S3method(textTable, xtable)
 S3method(textTable, xtableList)
+

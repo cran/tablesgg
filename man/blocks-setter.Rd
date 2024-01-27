@@ -1,5 +1,5 @@
 % Auto-generated documentation for function blocks<- 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.713039 
 \name{blocks<-}
 \alias{blocks<-}
 \title{Update the Blocks of a Plot-Ready or Plotted Table }

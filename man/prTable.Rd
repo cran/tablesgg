@@ -1,5 +1,5 @@
 % Auto-generated documentation for function prTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.030933 
 \name{prTable}
 \alias{prTable}
 \title{Create or Update a Fully Styled Table Ready for Plotting }

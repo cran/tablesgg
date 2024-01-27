@@ -1,5 +1,5 @@
 % Auto-generated documentation for function tablesggSetOpt 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.134754 
 \name{tablesggSetOpt}
 \alias{tablesggSetOpt}
 \title{Set the Values of Package Options }

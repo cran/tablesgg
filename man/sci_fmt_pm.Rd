@@ -1,5 +1,5 @@
 % Auto-generated documentation for function sci_fmt_pm 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.24786 
 \name{sci_fmt_pm}
 \alias{sci_fmt_pm}
 \title{Convert ASCII Scientific Notation into \code{plotmath} Form }

@@ -1,5 +1,5 @@
 % Auto-generated documentation for function as.dfObj 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.466581 
 \name{as.dfObj}
 \alias{as.dfObj}
 \title{Promote a Data Frame to Another Object Class }

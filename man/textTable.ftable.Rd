@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable.ftable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.277037 
 \name{textTable.ftable}
 \alias{textTable.ftable}
 \title{Create a \code{texttable} from an \code{ftable} }

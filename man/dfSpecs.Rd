@@ -1,5 +1,5 @@
 % Auto-generated documentation for function dfSpecs 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.57556 
 \name{dfSpecs}
 \alias{dfSpecs}
 \title{Specifications for Fields Used in Certain Object Classes }

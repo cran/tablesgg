@@ -1,4 +1,4 @@
-#===== Source file: ../make_rowgroups.r on 2021-06-02
+#===== Source file: ../make_rowgroups.r on 2024-01-26
 #-----
 
 make_rowgroups <- function(stdblks, rowheadruns, rowgroupSize)

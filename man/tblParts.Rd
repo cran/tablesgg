@@ -1,5 +1,5 @@
 % Auto-generated documentation for function tblParts 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.211217 
 \name{tblParts}
 \alias{tblParts}
 \title{Extract Dimensions of the Various Parts of a Table }

@@ -1,5 +1,5 @@
 % Auto-generated documentation for function hvrules<- 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.703398 
 \name{hvrules<-}
 \alias{hvrules<-}
 \title{Update the Hvrules of a Plot-Ready or Plotted Table }

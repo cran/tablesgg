@@ -1,4 +1,4 @@
-#===== Source file: ../adjacent_blocks.r on 2021-06-02
+#===== Source file: ../adjacent_blocks.r on 2024-01-26
 #-----
 
 adjacent_blocks <- function(x)

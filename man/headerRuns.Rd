@@ -1,5 +1,5 @@
 % Auto-generated documentation for function headerRuns 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.770912 
 \name{headerRuns}
 \alias{headerRuns}
 \title{Runs of Repeated Values in a Header Matrix }

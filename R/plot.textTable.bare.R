@@ -1,4 +1,4 @@
-#===== Source file: ../plot.textTable.r on 2021-06-02
+#===== Source file: ../plot.textTable.r on 2024-01-26
 #-----
 
 plot.textTable <- function(x, title=NULL, subtitle=NULL, foot=NULL, 

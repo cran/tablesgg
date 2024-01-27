@@ -1,5 +1,5 @@
 % Auto-generated documentation for function apply_scale 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.433908 
 \name{apply_scale}
 \alias{apply_scale}
 \title{Apply a Scale Factor to Table Elements }

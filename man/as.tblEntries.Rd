@@ -1,5 +1,5 @@
 % Auto-generated documentation for function as.tblEntries 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.473274 
 \name{as.tblEntries}
 \alias{as.tblEntries}
 \title{Promote a Data Frame to a \code{tblentries} Object }

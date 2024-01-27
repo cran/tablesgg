@@ -1,5 +1,5 @@
 % Auto-generated documentation for function rowhead_inside 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.057839 
 \name{rowhead_inside}
 \alias{rowhead_inside}
 \title{Move the Outermost Layer of Row Headers Inside a Table }

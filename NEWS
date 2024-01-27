@@ -1,3 +1,14 @@
+Changes in version 0.9-1 (2024-01-26)
+
+  * 'ggplot2' 3.4.0 began deprecation of the 'size' aesthetic 
+  for line-drawing functions like 'geom_rect' and 'geom_segments', in favor 
+  of the 'linewidth' aesthetic.  In this version of 'tablesgg' the internal 
+  interface to 'ggplot2' has been changed to reflect that.  There are no 
+  changes to the user interface for 'tablesgg', but 'ggplot2' version 3.4.0 
+  or later is now required.
+  
+  * Fixed a documentation error detected by CRAN for an un-exported function.
+
 Changes in version 0.8-1 (2021-05-31)
 
   * A 'textTable' method for matrices has been added.  In addition, calling 

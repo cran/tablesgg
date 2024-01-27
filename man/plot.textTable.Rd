@@ -1,5 +1,5 @@
 % Auto-generated documentation for function plot.textTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.839591 
 \name{plot.textTable}
 \alias{plot.textTable}
 \title{A Plot Method for \code{texttable} Objects }
@@ -132,11 +132,13 @@ plot(ttbl, rowheadInside=TRUE)
 # Show effect of 'plot.margin' by putting a box around the table:
 # -- default
 plt <- plot(ttbl) + 
-       ggplot2::theme(plot.background=ggplot2::element_rect(color="blue", size=1))
+       ggplot2::theme(plot.background=ggplot2::element_rect(color="blue", 
+                                      linewidth=1))
 plt
 # -- wider margin
 plt <- plot(ttbl, plot.margin=c(15, 15, 15, 15)) + 
-       ggplot2::theme(plot.background=ggplot2::element_rect(color="blue", size=1))
+       ggplot2::theme(plot.background=ggplot2::element_rect(color="blue", 
+                                      linewidth=1))
 plt
 
 # Data frame listing with rows in groups of 5:

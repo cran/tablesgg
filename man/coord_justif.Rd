@@ -1,5 +1,5 @@
 % Auto-generated documentation for function coord_justif 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.897485 
 \name{coord_justif}
 \alias{coord_justif}
 \title{Calculate X, y Positions and H|vjust Values for Entries }

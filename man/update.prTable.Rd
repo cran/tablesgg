@@ -1,5 +1,5 @@
 % Auto-generated documentation for function update.prTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.415102 
 \name{update.prTable}
 \alias{update.prTable}
 \title{Update a \code{prtable} (Plot-Ready Table) Object }

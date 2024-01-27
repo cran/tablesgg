@@ -1,4 +1,4 @@
-#===== Source file: ../summary.r on 2021-06-02
+#===== Source file: ../summary.r on 2024-01-26
 #-----
 
 summary.textTable <- function(object, ...)

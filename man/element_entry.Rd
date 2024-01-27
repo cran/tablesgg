@@ -1,5 +1,5 @@
 % Auto-generated documentation for function element_entry 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.626554 
 \name{element_entry}
 \alias{element_entry}
 \title{Specify Visual Properties for Table Entries and their Cells }
@@ -28,7 +28,8 @@ keep entry text from being too close to the cell borders.
   }
   \item{fill, fill_alpha, border_size, border_color}{Scalar graphical properties for the _cells_ that contain table entries.
 These will be passed to \code{ggplot2::geom_rect} under the names
-\code{fill}, \code{alpha}, \code{size}, and \code{colour}, respectively.
+\code{fill}, \code{alpha}, \code{linewidth}, and \code{colour},
+respectively.
   }
   \item{colour, border_colour}{Aliases for \code{color}, \code{border_color}.
   }

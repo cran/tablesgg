@@ -1,4 +1,4 @@
-#===== Source file: ../dfSpecs.r on 2021-06-02
+#===== Source file: ../dfSpecs.r on 2024-01-26
 #-----
 
 dfSpecs <- function(objClass)

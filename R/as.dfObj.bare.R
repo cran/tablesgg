@@ -1,4 +1,4 @@
-#===== Source file: ../as.dfObj.r on 2021-06-02
+#===== Source file: ../as.dfObj.r on 2024-01-26
 #-----
 
 as.dfObj <- function(x, objClass)

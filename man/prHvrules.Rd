@@ -1,5 +1,5 @@
 % Auto-generated documentation for function prHvrules 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.95888 
 \name{prHvrules}
 \alias{prHvrules}
 \title{Create Hvrules and Assign Them Graphical Properties }

@@ -1,4 +1,4 @@
-#===== Source file: ../prEntries.r on 2021-06-02
+#===== Source file: ../prEntries.r on 2024-01-26
 #-----
 
 prEntries <- function(x, style=tablesggOpt("entryStyle"), scale=1.0)

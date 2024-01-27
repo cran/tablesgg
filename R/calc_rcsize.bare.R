@@ -1,4 +1,4 @@
-#===== Source file: ../calc_rcsize.r on 2021-06-02
+#===== Source file: ../calc_rcsize.r on 2024-01-26
 #-----
 
 calc_rcsize <- function(entryInfo, vrule_hsize, hrule_vsize, sizeAdjust, 

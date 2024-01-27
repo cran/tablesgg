@@ -1,4 +1,4 @@
-#===== Source file: ../styleObj.r on 2021-06-02
+#===== Source file: ../styleObj.r on 2024-01-26
 #-----
 
 styleObj <- function(x, type, match_columns=character(0))

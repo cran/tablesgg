@@ -1,4 +1,4 @@
-#===== Source file: ../entries_by_block.r on 2021-06-02
+#===== Source file: ../entries_by_block.r on 2024-01-26
 #-----
 
 entries_by_block <- function(x, blocks, strict)

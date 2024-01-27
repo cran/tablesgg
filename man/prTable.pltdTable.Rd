@@ -1,5 +1,5 @@
 % Auto-generated documentation for function prTable.pltdTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.047317 
 \name{prTable.pltdTable}
 \alias{prTable.pltdTable}
 \title{Extract/Update a Plot-Ready Table from a Plotted Table }

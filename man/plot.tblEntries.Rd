@@ -1,5 +1,5 @@
 % Auto-generated documentation for function plot.tblEntries 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.856003 
 \name{plot.tblEntries}
 \alias{plot.tblEntries}
 \title{A Plot Method for \code{tblentries} Objects }

@@ -1,5 +1,5 @@
 % Auto-generated documentation for function tablesggOpt 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.122397 
 \name{tablesggOpt}
 \alias{tablesggOpt}
 \title{Get or Reset Package Options }

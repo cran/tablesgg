@@ -1,5 +1,5 @@
 % Auto-generated documentation for function element_block 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.641211 
 \name{element_block}
 \alias{element_block}
 \title{Specify Visual Properties for Table Blocks }
@@ -15,7 +15,7 @@ element_block(fill=NULL, fill_alpha=NULL, border_size=NULL,
 \arguments{
   \item{fill, fill_alpha, border_size, border_color}{Scalar graphical properties for the table blocks.  These will be passed to
 \code{ggplot2::geom_rect} under the names \code{fill}, \code{alpha},
-\code{size}, and \code{colour}, respectively.
+\code{linewidth}, and \code{colour}, respectively.
   }
   \item{border_colour}{Alias for \code{border_color}.
   }

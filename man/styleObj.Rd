@@ -1,5 +1,5 @@
 % Auto-generated documentation for function styleObj 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.075928 
 \name{styleObj}
 \alias{styleObj}
 \title{Create a Style Object }

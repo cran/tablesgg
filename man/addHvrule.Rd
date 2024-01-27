@@ -1,5 +1,5 @@
 % Auto-generated documentation for function addHvrule 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.361396 
 \name{addHvrule}
 \alias{addHvrule}
 \title{Add a Horizontal or Vertical Rule (Hvrule) to a Table }

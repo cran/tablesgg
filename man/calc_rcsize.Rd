@@ -1,5 +1,5 @@
 % Auto-generated documentation for function calc_rcsize 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.55652 
 \name{calc_rcsize}
 \alias{calc_rcsize}
 \title{Constrained Display Sizes of Each Table Row, Column and Entry }

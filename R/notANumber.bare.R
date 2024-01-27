@@ -1,4 +1,4 @@
-#===== Source file: ../notANumber.r on 2021-06-02
+#===== Source file: ../notANumber.r on 2024-01-26
 #-----
 
 notANumber <- function(x, result=c("logical", "values")) 

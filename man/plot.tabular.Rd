@@ -1,5 +1,5 @@
 % Auto-generated documentation for function plot.tabular 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.876312 
 \name{plot.tabular}
 \alias{plot.tabular}
 \title{A Plot Method for \code{tabular} Objects }

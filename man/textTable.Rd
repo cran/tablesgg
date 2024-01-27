@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.365561 
 \name{textTable}
 \alias{textTable}
 \title{Create a Structure Representing a 2D Table }

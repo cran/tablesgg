@@ -1,5 +1,5 @@
 % Auto-generated documentation for function update.prObj 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.404568 
 \name{update.prObj}
 \alias{update.prObj}
 \title{Update Style or Scale for Plot-Ready Table Elements }

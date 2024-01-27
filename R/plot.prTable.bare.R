@@ -1,4 +1,4 @@
-#===== Source file: ../plot.prTable.r on 2021-06-02
+#===== Source file: ../plot.prTable.r on 2024-01-26
 #-----
 
 plot.prTable <- function(x, plot.margin=tablesggOpt("plot.margin"), 
@@ -30,8 +30,8 @@ plot.prTable <- function(x, plot.margin=tablesggOpt("plot.margin"),
   # non-standard evaluation.
   fill <- NA;  fill_alpha <- NA;  border_color <- NA;  border_size <- NA
   gg_hjust <- NA;  gg_vjust <- NA;  size <- NA;  angle <- NA;  color <- NA
-  family <- NA;  fontface <- NA;  lineheight <- NA;  text <- NA
-  linetype <- NA;  y <- NA;  orientation <- NA
+  family <- NA;  fontface <- NA;  linewidth <- NA; lineheight <- NA;  
+  text <- NA;  linetype <- NA;  y <- NA;  orientation <- NA
   
   #----- Initialize a plot.
   # Set the widths of the margins added on each side of the table.
@@ -107,7 +107,7 @@ plot.prTable <- function(x, plot.margin=tablesggOpt("plot.margin"),
                            stringsAsFactors=FALSE)
     plt <- plt + geom_rect(aes(xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, 
                                fill=fill, alpha=fill_alpha, color=border_color, 
-                               size=border_size), 
+                               linewidth=border_size), 
                            data=dfr_blks, show.legend=FALSE)
   }
 
@@ -123,10 +123,11 @@ plot.prTable <- function(x, plot.margin=tablesggOpt("plot.margin"),
                          stringsAsFactors=FALSE)
   plt <- plt + geom_rect(aes(xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, 
                              fill=fill, alpha=fill_alpha, color=border_color, 
-                             size=border_size), 
+                             linewidth=border_size), 
                          data=dfr_cell, show.legend=FALSE) + 
          scale_colour_identity() + scale_size_identity() + 
-         scale_fill_identity() + scale_linetype_identity()
+         scale_fill_identity() + scale_linetype_identity() + 
+         scale_linewidth_identity()
 
   #----- Draw entry text for each cell.
   # Markdown text requires 'allowMarkdown', wrapping requires 'allowWrap'.
@@ -232,7 +233,8 @@ plot.prTable <- function(x, plot.margin=tablesggOpt("plot.margin"),
                              data=dfr_hr[rect, ], show.legend=FALSE)
     }
     plt <- plt + geom_segment(aes(x=xminr, y=yy, xend=xmaxr, yend=yy, 
-                                  colour=color, size=size, linetype=linetype), 
+                                  colour=color, linewidth=size, 
+                                  linetype=linetype), 
                               data=dfr_hr, show.legend=FALSE)
   }
 
@@ -258,7 +260,8 @@ plot.prTable <- function(x, plot.margin=tablesggOpt("plot.margin"),
                              data=dfr_vr[rect, ], show.legend=FALSE)
     }
     plt <- plt + geom_segment(aes(x=xx, y=yminr, xend=xx, yend=ymaxr, 
-                                  colour=color, size=size, linetype=linetype), 
+                                  colour=color, linewidth=size, 
+                                  linetype=linetype), 
                               data=dfr_vr, show.legend=FALSE)
   }
 

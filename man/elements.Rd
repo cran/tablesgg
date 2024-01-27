@@ -1,5 +1,5 @@
 % Auto-generated documentation for function elements 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.602233 
 \name{elements}
 \alias{elements}
 \title{Extract Table Elements from a Plotted Table }

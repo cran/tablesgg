@@ -1,5 +1,5 @@
 % Auto-generated documentation for function tblBlocks 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.152615 
 \name{tblBlocks}
 \alias{tblBlocks}
 \title{Define Blocks of Cells that Reflect the Logical Structure of a Table }

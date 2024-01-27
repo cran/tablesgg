@@ -1,5 +1,5 @@
 % Auto-generated documentation for function props<- 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.992665 
 \name{props<-}
 \alias{props<-}
 \title{Update Graphical Properties for Selected Table Elements }

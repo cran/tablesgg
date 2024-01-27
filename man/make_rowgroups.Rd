@@ -1,5 +1,5 @@
 % Auto-generated documentation for function make_rowgroups 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.797882 
 \name{make_rowgroups}
 \alias{make_rowgroups}
 \title{Group Rows of a Table into Sets of Fixed Size }

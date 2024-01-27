@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable.tblEntries 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.391306 
 \name{textTable.tblEntries}
 \alias{textTable.tblEntries}
 \title{Reconstruct a \code{texttable} Object from a \code{tblentries} Object }

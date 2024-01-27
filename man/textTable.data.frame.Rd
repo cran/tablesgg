@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable.data.frame 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.268585 
 \name{textTable.data.frame}
 \alias{textTable.data.frame}
 \title{Create a \code{texttable} as a Simple Listing of a Data Frame }

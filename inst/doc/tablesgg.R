@@ -1,23 +1,23 @@
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 knitr::opts_chunk$set(echo=TRUE, fig.align="center")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 ggplot2::theme_update(plot.background=ggplot2::element_rect(fill=NA))
 
-## ---- eval=(Sys.getenv("RUNNING_PKG_SETUP", unset="") == "")------------------
+## ----eval=(Sys.getenv("RUNNING_PKG_SETUP", unset="") == "")-------------------
 library(tablesgg)
 
 ## -----------------------------------------------------------------------------
 str(iris2)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 plt <- plot(textTable(head(iris2)))
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(textTable(head(iris2)))
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  library(ggplot2)
 #  theme_update(plot.background=element_rect(fill=NA))
 
@@ -27,68 +27,68 @@ iris2_tab <- tabular(Species*Heading()*value*Format(digits=2)*(mean + sd) ~
                      Heading("Flower part")*flower_part*Heading()*direction, 
                      data=iris2)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 plt <- plot(textTable(iris2_tab))
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(textTable(iris2_tab))
 
 ## -----------------------------------------------------------------------------
 methods(textTable)
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  plot(textTable(head(iris2)))
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 plt <- plot(textTable(head(iris2), row.names="Obs. #"))
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(textTable(head(iris2), row.names="Obs. #"))
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  iris2_tab <- tabular(Species*Heading()*value*Format(digits=2)*(mean + sd) ~
 #                       Heading("Flower part")*flower_part*Heading()*direction,
 #                       data=iris2)
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  plot(textTable(iris2_tab))
 
-## ---- echo=TRUE---------------------------------------------------------------
+## ----echo=TRUE----------------------------------------------------------------
 ttbl <- textTable(iris2_tab, title="The iris data", 
                   subtitle=c("Summary statistics by species", 
                              "A second subtitle line"), 
                   foot="sd = standard deviation")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plot(ttbl), units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(ttbl)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 tmp <- plot(ttbl, title="A new title", subtitle=character(0))
 sz <- pltdSize(tmp, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 # Change the main title, remove the subtitles.
 plot(ttbl, title="A new title", subtitle=character(0))
 
-## ---- echo=TRUE---------------------------------------------------------------
+## ----echo=TRUE----------------------------------------------------------------
 plt <- plot(iris2_tab, title="The iris data")
 pltdSize(plt)
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  sz <- pltdSize(plt, units="in")   # R expects device dimensions in inches
 #  dev.new(width=sz[1], height=sz[2])
 #  plt
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 tmp <- plot(iris2_tab, scale=0.8, title="The iris data (scale=0.8)")
 sz <- pltdSize(tmp, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt2 <- plot(iris2_tab, scale=0.8, title="The iris data (scale=0.8)")
 plt2
 
@@ -98,11 +98,11 @@ plt1 <- plot(iris2_tab, title="The iris data", subtitle="With rowheadInside = TR
 plt2 <- plot(textTable(iris2[1:9, ]), title="The first 9 rows of 'iris2'", 
              subtitle="In groups of 4 (rowgroupSize=4)", rowgroupSize=4)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz1 <- pltdSize(plt1, units="in")
 sz2 <- pltdSize(plt2, units="in")
 
-## ---- fig.width=sz1[1]+sz2[1]+0.5, fig.height=max(sz1[2], sz2[2])-------------
+## ----fig.width=sz1[1]+sz2[1]+0.5, fig.height=max(sz1[2], sz2[2])--------------
 print(plt1, position=c("left", "center"))
 print(plt2, position=c("right", "center"), newpage=FALSE)
 
@@ -111,13 +111,13 @@ ttbl <- textTable(iris2_tab, title=paste0("MATH_plain('The length of vector')~",
                                     "group('(', list(a, b), ')')~plain('is ')~", 
                                     "sqrt(a^2 + b^2)"))
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plot(ttbl), units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(ttbl)
 
-## ---- eval=tablesggOpt("allowMarkdown")---------------------------------------
+## ----eval=tablesggOpt("allowMarkdown")----------------------------------------
 txt1 <- paste0(
           "MKDN_Some <span style='color:blue'>blue text **in bold.**</span><br>", 
           "And *italic text.*<br>", 
@@ -126,26 +126,26 @@ txt2 <- "MKDN_Super- and subscripts: *x*<sup>2</sup> + 5*x* + *C*<sub>*i*</sub>"
 plt <- plot(textTable(matrix(c(txt1, txt2), ncol=1)), 
             title="Illustrate markdown", scale=1.2)
 
-## ---- echo=FALSE, eval=tablesggOpt("allowMarkdown")---------------------------
+## ----echo=FALSE, eval=tablesggOpt("allowMarkdown")----------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2], eval=tablesggOpt("allowMarkdown")----
+## ----fig.width=sz[1], fig.height=sz[2], eval=tablesggOpt("allowMarkdown")-----
 print(plt)
 
-## ---- echo=FALSE, eval=!tablesggOpt("allowMarkdown")--------------------------
+## ----echo=FALSE, eval=!tablesggOpt("allowMarkdown")---------------------------
 #  cat("[Example skipped because 'tablesggOpt(\"allowMarkdown\")' is FALSE]\n")
 
 ## -----------------------------------------------------------------------------
 ttbl <- textTable(iris2_tab, foot="sd = standard deviation")
 ttbl <- addRefmark(ttbl, mark="a", before="sd =", after="sd$", raise=TRUE)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plot(ttbl), units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(ttbl)
 
-## ---- echo=FALSE, fig.align="center"------------------------------------------
+## ----echo=FALSE, fig.align="center"-------------------------------------------
 partid <- c("title", "subtitle", "rowhead", "rowheadLabels", "colhead", 
             "body", "foot")
 partcolor <- c("#1B9E77", "#D95F02", "#7570B3", "#E7298A", "#66A61E", 
@@ -183,7 +183,7 @@ sz1 <- pltdSize(plt, units="in")
 sz2 <- pltdSize(keyplt, units="in")
 sz <- c(sz1[1] + sz2[1] + 0.5, max(sz1[2], sz2[2]))
 
-## ---- echo=FALSE, fig.width=sz[1], fig.height=sz[2]---------------------------
+## ----echo=FALSE, fig.width=sz[1], fig.height=sz[2]----------------------------
 print(plt, position=c(0, 0.5))
 print(keyplt, position=c(1, 0.5), newpage=FALSE)
 
@@ -193,7 +193,7 @@ summary(ttbl)
 ## -----------------------------------------------------------------------------
 adim(ttbl)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 plt1 <- plot(ttbl, title="Highlight borders of table entries")
 plt2 <- plot(ttbl, title="Highlight hvrules")
 propsd(plt1, subset=enabled) <- element_entry(border_color="blue", border_size=0.5)
@@ -203,22 +203,22 @@ sz1 <- pltdSize(plt1, units="in")
 sz2 <- pltdSize(plt2, units="in")
 sz <- c(sz1[1] + sz2[1] + 0.5, max(sz1[2], sz2[2]) + 0.5)
 
-## ---- echo=FALSE, fig.width=sz[1], fig.height=sz[2]---------------------------
+## ----echo=FALSE, fig.width=sz[1], fig.height=sz[2]----------------------------
 print(plt1, position=c(0, 0.5))
 print(plt2, position=c(1, 0.5), newpage=FALSE)
 
-## ---- echo=TRUE---------------------------------------------------------------
+## ----echo=TRUE----------------------------------------------------------------
 plt1 <- plot(ttbl, title="Default style for entries")
 plt2 <- plot(ttbl, entryStyle=styles_pkg$entryStyle_pkg_base, 
              title="The 'base' style for entries")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 # Show the tables side by side.
 sz1 <- pltdSize(plt1, units="in")
 sz2 <- pltdSize(plt2, units="in")
 sz <- c(sz1[1] + sz2[1] + 0.5, max(sz1[2], sz2[2]))
 
-## ---- echo=TRUE, fig.width=sz[1], fig.height=sz[2]----------------------------
+## ----echo=TRUE, fig.width=sz[1], fig.height=sz[2]-----------------------------
 print(plt1, position=c("left", "center"))
 print(plt2, position=c("right", "center"), newpage=FALSE)
 
@@ -227,10 +227,10 @@ subttbl <- ttbl[-4, c(1,2,5,6,3,4)]
 # Also change annotation:
 subttbl <- update(subttbl, title="Example of subscripting a 'textTable'")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plot(subttbl), units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plot(subttbl)
 
 ## -----------------------------------------------------------------------------
@@ -247,7 +247,7 @@ plt2 <- update(plt1, scale=0.8)
 plt3 <- update(plt2, scale=1.0)
 rbind(pltdSize(plt1), pltdSize(plt2), pltdSize(plt3))
 
-## ---- echo=TRUE---------------------------------------------------------------
+## ----echo=TRUE----------------------------------------------------------------
 head(elements(plt1, type="entry"))
 
 ## -----------------------------------------------------------------------------
@@ -257,10 +257,10 @@ props(plt, id="subtitle,2") <- element_entry(text="Properties changed",
                                             fill="gray85")
 props(plt, id="rowhead_right") <- element_hvrule(linetype=1, color="black")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
 ## -----------------------------------------------------------------------------
@@ -268,29 +268,29 @@ plt <- plot(textTable(iris2_tab, foot="sd = standard deviation"))
 props(plt, regex="^sd$") <- element_refmark(mark="*", side="after")
 props(plt, regex="^sd =") <- element_refmark(mark="*", side="before")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
 ## -----------------------------------------------------------------------------
 propsa(plt, arows=c(5, 7, 9), acols=5) <- element_entry(color="red")
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
 ## -----------------------------------------------------------------------------
 propsa(plt, arows=arow(plt, hpath=c(NA, "mean")), 
        acols=acol(plt, id="body")) <- element_entry(fontface=2)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
 ## -----------------------------------------------------------------------------
@@ -299,43 +299,43 @@ propsd(plt, subset=(enabled)) <- element_hvrule(color="red")
 propsd(plt, subset=(part == "colhead" & headlayer == 1)) <- 
        element_entry(angle=90, hjust=0.5, vjust=1.0)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
-## ---- echo=TRUE, fig.align="center"-------------------------------------------
+## ----echo=TRUE, fig.align="center"--------------------------------------------
 plt <- addBlock(plt, arows=c(6, 7), acols=c(3, 4), 
                 props=element_block(border_color="red", border_size=1.0), 
                 enabled=TRUE)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
-## ---- echo=TRUE, fig.align="center"-------------------------------------------
+## ----echo=TRUE, fig.align="center"--------------------------------------------
 plt <- addHvrule(plt, direction="vrule", acols=4.5, arows=arow(plt, "body"), 
                  props=element_hvrule(linetype=2, color="blue"), enabled=TRUE)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2]---------------------------------------
+## ----fig.width=sz[1], fig.height=sz[2]----------------------------------------
 plt
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  plt + theme(plot.background=element_rect(fill=NA, color="black", size=1))
 
-## ---- echo=TRUE---------------------------------------------------------------
+## ----echo=TRUE----------------------------------------------------------------
 styles_pkg$entryStyle_pkg_1
 
-## ---- echo=TRUE---------------------------------------------------------------
+## ----echo=TRUE----------------------------------------------------------------
 styles_pkg$blockStyle_pkg_1[, 1:5]
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  {
 #  #  ... code to create character vectors/matrices for table parts, then ...
 #  z <- list(title=title, subtitle=subtitle, rowhead=rowhead,
@@ -345,7 +345,7 @@ styles_pkg$blockStyle_pkg_1[, 1:5]
 #  textTable(z)
 #  }
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 ttbl <- textTable(iris2_tab, foot="sd = standard deviation")
 ttblA <- update(ttbl, title="Highlight a 'colblock' of subtype 'A'", 
                 subtitle="ID of the highlighted block is 'colblock/A/2/1'")
@@ -367,12 +367,12 @@ szB <- pltdSize(pltB, units="in")
 szC <- pltdSize(pltC, units="in")
 sz <- c(szA[1] + szB[1] + 1.0, max(szA[2], szB[2]) + szC[2] + 1.0)
 
-## ---- echo=FALSE, fig.width=sz[1], fig.height=sz[2]---------------------------
+## ----echo=FALSE, fig.width=sz[1], fig.height=sz[2]----------------------------
 print(pltA, vpx=0.25, vpy=0.75)
 print(pltB, vpx=0.75, vpy=0.75, newpage=FALSE)
 print(pltC, vpx=0.5, vpy=0.25, newpage=FALSE)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 # Row header blocks when 'rowheadInside' is TRUE
 ttblABC <- update(ttbl, title=c("Highlight a set of layer-0 row header blocks", 
                                 "('rowheadInside' set to TRUE)"))
@@ -406,21 +406,21 @@ sz1 <- pltdSize(plt, units="in")
 sz2 <- pltdSize(keyplt, units="in")
 sz <- c(sz1[1] + sz2[1] + 0.5, max(sz1[2], sz2[2]))
 
-## ---- echo=FALSE, fig.width=sz[1], fig.height=sz[2]---------------------------
+## ----echo=FALSE, fig.width=sz[1], fig.height=sz[2]----------------------------
 print(plt, position=c(0, 0.5))
 print(keyplt, position=c(1, 0.5), newpage=FALSE)
 
-## ---- eval=tablesggOpt("allowWrap")-------------------------------------------
+## ----eval=tablesggOpt("allowWrap")--------------------------------------------
 tablesggSetOpt(allowWrap=TRUE)
 plt <- plot(iris2_tab, title=paste0("An unnecessarily long title, used to ", 
             "illustrate automatic text wrapping"))
 
-## ---- echo=FALSE, eval=tablesggOpt("allowWrap")-------------------------------
+## ----echo=FALSE, eval=tablesggOpt("allowWrap")--------------------------------
 sz <- pltdSize(plt, units="in")
 
-## ---- fig.width=sz[1], fig.height=sz[2], eval=tablesggOpt("allowWrap")--------
+## ----fig.width=sz[1], fig.height=sz[2], eval=tablesggOpt("allowWrap")---------
 print(plt)
 
-## ---- echo=FALSE, eval=!tablesggOpt("allowWrap")------------------------------
+## ----echo=FALSE, eval=!tablesggOpt("allowWrap")-------------------------------
 #  cat("[Example skipped because 'tablesggOpt(\"allowWrap\")' is FALSE]\n")
 

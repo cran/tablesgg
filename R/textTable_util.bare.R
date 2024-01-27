@@ -1,4 +1,4 @@
-#===== Source file: ../textTable_util.r on 2021-06-02
+#===== Source file: ../textTable_util.r on 2024-01-26
 #-----
 
 '[.textTable' <- function(x, i, j, drop=FALSE)

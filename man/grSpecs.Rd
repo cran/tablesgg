@@ -1,5 +1,5 @@
 % Auto-generated documentation for function grSpecs 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.763134 
 \name{grSpecs}
 \alias{grSpecs}
 \title{Specifications for Graphical Properties for an Element Type }

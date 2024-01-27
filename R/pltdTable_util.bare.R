@@ -1,4 +1,4 @@
-#===== Source file: ../pltdTable_util.r on 2021-06-02
+#===== Source file: ../pltdTable_util.r on 2024-01-26
 #-----
 
 pltdSize <- function(x, units=c("mm", "inches", "cm"))

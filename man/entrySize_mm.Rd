@@ -1,5 +1,5 @@
 % Auto-generated documentation for function entrySize_mm 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.731871 
 \name{entrySize_mm}
 \alias{entrySize_mm}
 \title{Calculate the Sizes of Table Entries, in Mm }

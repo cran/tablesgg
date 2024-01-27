@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable.default 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.381836 
 \name{textTable.default}
 \alias{textTable.default}
 \title{Create a \code{texttable} Object from a Suitable List}

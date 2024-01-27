@@ -1,5 +1,5 @@
 % Auto-generated documentation for function prEntries 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.946379 
 \name{prEntries}
 \alias{prEntries}
 \title{Assign Graphical Properties to Table Entries }

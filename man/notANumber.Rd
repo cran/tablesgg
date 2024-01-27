@@ -1,5 +1,5 @@
 % Auto-generated documentation for function notANumber 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.807923 
 \name{notANumber}
 \alias{notANumber}
 \title{Identify Strings that Cannot be Interpreted as Numbers }

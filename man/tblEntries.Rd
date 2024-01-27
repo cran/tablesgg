@@ -1,5 +1,5 @@
 % Auto-generated documentation for function tblEntries 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.175276 
 \name{tblEntries}
 \alias{tblEntries}
 \title{Assemble Information About Each Entry in a Table into a Data Frame }

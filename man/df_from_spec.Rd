@@ -1,5 +1,5 @@
 % Auto-generated documentation for function df_from_spec 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.581122 
 \name{df_from_spec}
 \alias{df_from_spec}
 \title{Create a Data Frame from a Specification }

@@ -1,5 +1,5 @@
 % Auto-generated documentation for function apply_style 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.444666 
 \name{apply_style}
 \alias{apply_style}
 \title{Apply a Style to Table Elements }

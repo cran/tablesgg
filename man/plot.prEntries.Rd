@@ -1,5 +1,5 @@
 % Auto-generated documentation for function plot.prEntries 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.86389 
 \name{plot.prEntries}
 \alias{plot.prEntries}
 \title{A Plot Method for \code{prentries} Objects }
@@ -16,7 +16,7 @@ called by package users.
 \arguments{
   \item{x}{A \code{prEntries} object, containing plot-ready entries for a table.
   }
-  \item{hvruleStyle, blockStyle, scale, rowgroupSize, plot.margin, sizeAdjust}{Arguments used to control the appearance of the plot.  See the
+  \item{hvruleStyle, blockStyle, scale, rowgroupSize}{Arguments used to control the appearance of the plot.  See the
 documentation for \code{plot.textTable} for more details about these
 arguments.
   }

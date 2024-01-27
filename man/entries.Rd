@@ -1,5 +1,5 @@
 % Auto-generated documentation for function entries 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.688759 
 \name{entries}
 \alias{entries}
 \title{Extract the \code{prentries} Object from a Plot-Ready or Plotted Table }

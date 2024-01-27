@@ -1,5 +1,5 @@
 % Auto-generated documentation for function as.prBlocks 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.501253 
 \name{as.prBlocks}
 \alias{as.prBlocks}
 \title{Promote a Data Frame to a \code{prblocks} Object }

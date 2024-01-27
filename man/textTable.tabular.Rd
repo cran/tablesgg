@@ -1,5 +1,5 @@
 % Auto-generated documentation for function textTable.tabular 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.305085 
 \name{textTable.tabular}
 \alias{textTable.tabular}
 \title{Create a \code{texttable} from a \code{tabular} Object }

@@ -1,4 +1,4 @@
-#===== Source file: ../entrySize_mm.r on 2021-06-02
+#===== Source file: ../entrySize_mm.r on 2024-01-26
 #-----
 
 entrySize_mm <- function(entryInfo, allowWrap, sizeAdjust=c(1, 1))

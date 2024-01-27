@@ -1,5 +1,5 @@
 % Auto-generated documentation for function addBlock 
-%  2021-06-02 11:12:18 
+%  2024-01-26 15:48:13.3469 
 \name{addBlock}
 \alias{addBlock}
 \title{Define a New Block of Cells in a Table }

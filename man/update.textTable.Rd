@@ -1,5 +1,5 @@
 % Auto-generated documentation for function update.textTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:14.435218 
 \name{update.textTable}
 \alias{update.textTable}
 \title{Update a \code{texttable} Object }

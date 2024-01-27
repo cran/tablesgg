@@ -1,5 +1,5 @@
 % Auto-generated documentation for function plot.prTable 
-%  2021-06-02 11:12:19 
+%  2024-01-26 15:48:13.821287 
 \name{plot.prTable}
 \alias{plot.prTable}
 \title{A Plot Method for \code{prtable} Objects }

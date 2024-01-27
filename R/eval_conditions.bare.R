@@ -1,4 +1,4 @@
-#===== Source file: ../eval_conditions.r on 2021-06-02
+#===== Source file: ../eval_conditions.r on 2024-01-26
 #-----
 
 eval_conditions <- function(x, conditions, NA_condition_value=TRUE)
